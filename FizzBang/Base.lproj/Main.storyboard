@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPV-We-yDe">
+                                <rect key="frame" x="252" y="100" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="5qB-ZS-FrG"/>
+                                    <constraint firstAttribute="height" constant="30" id="uiq-WD-rWv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1j-Ae-S2x">
+                                <rect key="frame" x="264" y="176" width="73" height="30"/>
+                                <state key="normal" title="What is it?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="whatIsItButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w0z-yH-OXG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrx-wT-RmD">
+                                <rect key="frame" x="279" y="289" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUs-I5-CAV">
+                                <rect key="frame" x="357" y="104" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bsq-Le-Ugh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvm-Tw-Z66">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hly-dU-ksh">
+                                        <rect key="frame" x="8" y="8" width="292" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="292" id="usf-wx-38h"/>
+                                        </constraints>
+                                        <string key="text">Enter a number into the text box and press the "What is it button?"  You will get a result based off the FizzBuzz logic...  ...with a twist.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwY-Xl-IcG">
+                                        <rect key="frame" x="131" y="257" width="38" height="30"/>
+                                        <state key="normal" title="Got it">
+                                            <color key="titleColor" red="0.07467288524" green="0.94631999730000005" blue="0.02118287235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infoViewCloseButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u7Z-0R-i8g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="TAp-av-TQh"/>
+                                    <constraint firstItem="hly-dU-ksh" firstAttribute="top" secondItem="mvm-Tw-Z66" secondAttribute="top" constant="8" id="e9k-Xm-9Uw"/>
+                                    <constraint firstAttribute="centerY" secondItem="IwY-Xl-IcG" secondAttribute="centerY" constant="-122" id="eEl-Ni-QGy"/>
+                                    <constraint firstAttribute="width" constant="300" id="oo2-At-kJv"/>
+                                    <constraint firstAttribute="centerX" secondItem="IwY-Xl-IcG" secondAttribute="centerX" id="p8U-Pz-L65"/>
+                                    <constraint firstItem="hly-dU-ksh" firstAttribute="leading" secondItem="mvm-Tw-Z66" secondAttribute="leading" constant="8" id="q5p-bd-RfK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="mvm-Tw-Z66" secondAttribute="centerY" id="6Xa-gQ-SlW"/>
+                            <constraint firstItem="WUs-I5-CAV" firstAttribute="centerY" secondItem="XPV-We-yDe" secondAttribute="centerY" id="9uJ-Cp-4iO"/>
+                            <constraint firstItem="mvm-Tw-Z66" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="150" id="C9E-y7-dFP"/>
+                            <constraint firstAttribute="centerX" secondItem="Wrx-wT-RmD" secondAttribute="centerX" id="DaS-mH-WPg"/>
+                            <constraint firstItem="mvm-Tw-Z66" firstAttribute="centerX" secondItem="F1j-Ae-S2x" secondAttribute="centerX" id="FW0-8i-o7D"/>
+                            <constraint firstItem="F1j-Ae-S2x" firstAttribute="top" secondItem="XPV-We-yDe" secondAttribute="bottom" constant="46" id="ILL-gE-BNF"/>
+                            <constraint firstItem="WUs-I5-CAV" firstAttribute="top" secondItem="XPV-We-yDe" secondAttribute="top" id="N75-ds-nPg"/>
+                            <constraint firstItem="XPV-We-yDe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="Nvf-jI-jtV"/>
+                            <constraint firstItem="mvm-Tw-Z66" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OL9-OU-43k"/>
+                            <constraint firstAttribute="centerX" secondItem="F1j-Ae-S2x" secondAttribute="centerX" constant="-0.5" id="cxc-Vw-iuC"/>
+                            <constraint firstItem="mvm-Tw-Z66" firstAttribute="top" secondItem="XPV-We-yDe" secondAttribute="bottom" constant="20" id="lyw-75-sXT"/>
+                            <constraint firstAttribute="centerY" secondItem="XPV-We-yDe" secondAttribute="centerY" constant="185" id="nQO-8f-3Nf"/>
+                            <constraint firstAttribute="centerY" secondItem="F1j-Ae-S2x" secondAttribute="centerY" constant="109" id="qvm-qt-Mx1"/>
+                            <constraint firstItem="WUs-I5-CAV" firstAttribute="leading" secondItem="XPV-We-yDe" secondAttribute="trailing" constant="8" id="uCu-sF-jjA"/>
+                            <constraint firstItem="Wrx-wT-RmD" firstAttribute="top" secondItem="XPV-We-yDe" secondAttribute="bottom" constant="159" id="vJB-9B-OCx"/>
+                            <constraint firstAttribute="centerX" secondItem="mvm-Tw-Z66" secondAttribute="centerX" id="wMU-98-CEt"/>
+                            <constraint firstAttribute="centerX" secondItem="XPV-We-yDe" secondAttribute="centerX" constant="-0.5" id="xSv-dd-W9m"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="C9E-y7-dFP"/>
+                                <exclude reference="FW0-8i-o7D"/>
+                                <exclude reference="OL9-OU-43k"/>
+                                <exclude reference="lyw-75-sXT"/>
+                                <exclude reference="N75-ds-nPg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="infoButton" destination="WUs-I5-CAV" id="whJ-dH-F1d"/>
+                        <outlet property="infoView" destination="mvm-Tw-Z66" id="iHY-q1-pMw"/>
+                        <outlet property="infoViewCloseButton" destination="IwY-Xl-IcG" id="VFD-tB-Ggf"/>
+                        <outlet property="infoViewLabel" destination="hly-dU-ksh" id="uXX-xt-pHs"/>
+                        <outlet property="numberBox" destination="XPV-We-yDe" id="e6N-sX-nVL"/>
+                        <outlet property="resultLabel" destination="Wrx-wT-RmD" id="Qou-O6-u7a"/>
+                        <outlet property="whatIsItButton" destination="F1j-Ae-S2x" id="FZD-uw-xhI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
